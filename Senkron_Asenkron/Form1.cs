@@ -25,9 +25,10 @@ namespace Senkron_Asenkron
             Sum(int.Parse(textBox1.Text), int.Parse(textBox2.Text));
         }
 
-        private void btnMultiplication_Click(object sender, EventArgs e)
+        private async void btnMultiplication_Click(object sender, EventArgs e)
         {
-            Multiplication(int.Parse(textBox1.Text),int.Parse(textBox2.Text));
+            await MultiplicationAsync(int.Parse(textBox1.Text), int.Parse(textBox2.Text));
+            MessageBox.Show("Process Completed.");
         }
 
         private void Sum(int number1, int number2)
@@ -43,7 +44,11 @@ namespace Senkron_Asenkron
 
         private Task MultiplicationAsync(int number1, int number2)
         {
-            return Task.Run();
+            return Task.Run(() =>
+            {
+                Thread.Sleep(10000);
+                MessageBox.Show($"Result: {number1 * number2}");
+            });
         }
     }
 }

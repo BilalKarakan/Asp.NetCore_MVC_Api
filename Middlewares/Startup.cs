@@ -26,9 +26,15 @@ namespace Middlewares
             }
 
             app.UseRouting();
+            app.UseMiddleware<ResponseEditingMiddleware>();
             app.UseMiddleware<RequestEditingMiddleware>();
             app.UseEndpoints(endpoints =>
             {
+                //endpoints.MapControllerRoute
+                //(
+                //    name: "default",
+                //    pattern: "{controller=Home}/{action=index}/{id?}"
+                //);
                 //endpoints.MapGet("/", async context =>
                 //{
                 //    await context.Response.WriteAsync("Hello World!");

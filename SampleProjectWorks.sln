@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senkron_Asenkron", "Senkron
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionDelegates", "ActionDelegates\ActionDelegates.csproj", "{A1BF9181-7CE8-4B3B-B171-F79BB94A95CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middlewares", "Middlewares\Middlewares.csproj", "{78AEF6FA-4DD5-4CFE-B10B-93B2E2EAE58F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middlewares", "Middlewares\Middlewares.csproj", "{78AEF6FA-4DD5-4CFE-B10B-93B2E2EAE58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc", "mvc\Mvc.csproj", "{B070E547-9B45-48EC-9C8D-571B4F0CEBBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{78AEF6FA-4DD5-4CFE-B10B-93B2E2EAE58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78AEF6FA-4DD5-4CFE-B10B-93B2E2EAE58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78AEF6FA-4DD5-4CFE-B10B-93B2E2EAE58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B070E547-9B45-48EC-9C8D-571B4F0CEBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B070E547-9B45-48EC-9C8D-571B4F0CEBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B070E547-9B45-48EC-9C8D-571B4F0CEBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B070E547-9B45-48EC-9C8D-571B4F0CEBBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

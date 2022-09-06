@@ -30,7 +30,8 @@ namespace mvc
             {
                 endpoint.MapControllerRoute(
                     name: "default",
-                    pattern: "{Controller}/{Action}"
+                    pattern: "{Controller}/{Action}",
+                    defaults: new { Controller = "Home", Action = "Index" }
                 );
             }
             

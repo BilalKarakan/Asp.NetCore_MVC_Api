@@ -10,6 +10,7 @@
         </style>
     </head>
     <body>
+        @*
         @{
             int age = 23;
             string value = string.Empty;
@@ -46,6 +47,17 @@
     </p>
     <p>
         Durum = @result
+    </p>
+    *@
+
+    <p>
+        @ViewBag.Name @*Elif*@
+    </p>
+    <p>
+        @ViewData["Name"]  @*Elif*@
+    </p>
+    <p>
+        @TempData["Name"]  @*Mehmet*@
     </p>
     </body>
 </html>

@@ -6,6 +6,12 @@ namespace Mvc.Controllers
     {
         public IActionResult Index()
         {
+            // ViewBag, ViewData, TempData, Model
+
+            ViewBag.Name = "Bilal";
+            ViewData["Name"] = "Elif";
+            TempData["Name"] = "Mehmet";
+
             return View();
         }
     }

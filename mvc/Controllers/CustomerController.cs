@@ -13,7 +13,7 @@ namespace Mvc.Controllers
                 LastName = "Karakan",
                 Age = 23
             };
-            return View(customer);
+            return View("example",customer);
         }
     }
 }

@@ -14,5 +14,10 @@ namespace Mvc.Controllers
 
             return View();
         }
+
+        public IActionResult Index2(int id)
+        {
+            return View();
+        }
     }
 }

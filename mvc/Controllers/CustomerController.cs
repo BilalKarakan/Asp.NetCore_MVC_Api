@@ -13,7 +13,16 @@ namespace Mvc.Controllers
                 LastName = "Karakan",
                 Age = 23
             };
-            return View("example",customer);
+            return RedirectToAction("example");
+        }
+        public IActionResult Index2()
+        {
+            return RedirectToAction("Index", "Home", new {@id = 1});
+        }
+
+        public IActionResult Example()
+        {
+            return View();
         }
     }
 }

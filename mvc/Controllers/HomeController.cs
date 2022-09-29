@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Mvc.Controllers
 {
@@ -7,6 +8,13 @@ namespace Mvc.Controllers
         public IActionResult Index()
         {
             // ViewBag, ViewData, TempData, Model
+
+            /*
+            Dictionary<string, object > dictionary = new();
+            var list = dictionary.Values;
+            */
+
+            var id = (string)RouteData.Values["id"];    
 
             ViewBag.Name = "Bilal";
             ViewData["Name"] = "Elif";

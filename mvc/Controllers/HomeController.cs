@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mvc.Models;
 using System.Collections.Generic;
 
 namespace Mvc.Controllers
@@ -26,6 +27,12 @@ namespace Mvc.Controllers
         public IActionResult Index2(int id)
         {
             return View();
+        }
+
+        public IActionResult Index3()
+        {
+            var customers = CustomerContext.Customers;
+            return View(customers);
         }
     }
 }

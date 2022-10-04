@@ -37,8 +37,8 @@ namespace mvc
 
                 endpoint.MapControllerRoute(
                     name: "default",
-                    pattern: "{Controller}/{Action}/{id:alpha}",
-                    defaults: new { Controller = "Home", Action = "Index", }
+                    pattern: "{Controller}/{Action}/{id?}",
+                    defaults: new {Controller = "Home", Action = "Index"}
                 );
             }
             

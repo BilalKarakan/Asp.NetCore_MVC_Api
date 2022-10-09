@@ -1,29 +1,29 @@
 ﻿@model List<Mvc.Models.Customer>
-<style>
-    table,tr,th,td{
-        border: 1px solid black;
-    }
 
-    tr, th, td {
-        padding:10px;
-    }
-</style>
-<table class="table">
-    <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<html>
+    <head>
+        <title>Customer - List</title>
+        <link href="~/style.css" rel="stylesheet" />
+    </head>
+    <body>
+    <table class="table">
+        <thead>
             <tr>
-                <td>@item.FirstName</td>
-                <td>@item.LastName</td>
-                <td>@item.Age</td>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Age</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </body>
+</html>

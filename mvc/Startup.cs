@@ -26,6 +26,7 @@ namespace mvc
             }
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoint =>
             {

@@ -41,10 +41,10 @@ namespace Mvc.Models
 
         public static List<Customer> Customers = new()
         {
-            new Customer {FirstName = "Enes", LastName = "Karakan", Age = 28},
-            new Customer {FirstName = "Fatih", LastName = "Karakan", Age = 26},
-            new Customer {FirstName = "Bilal", LastName = "Karakan", Age = 23},
-            new Customer {FirstName = "Yusuf", LastName = "Karakan", Age = 21},
+            new Customer {Id = 1, FirstName = "Enes", LastName = "Karakan", Age = 28},
+            new Customer {Id = 2, FirstName = "Fatih", LastName = "Karakan", Age = 26},
+            new Customer {Id = 3, FirstName = "Bilal", LastName = "Karakan", Age = 23},
+            new Customer {Id = 4, FirstName = "Yusuf", LastName = "Karakan", Age = 21},
         };
     }
 }
